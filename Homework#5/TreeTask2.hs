@@ -23,7 +23,7 @@ fn_for_tree elem = case elem of
 get_tree_height :: BinaryTree a -> Int 
 get_tree_height tree = case tree of 
 								Nil -> 0
-								Cons leafValue left right -> max (get_tree_height left) (get_tree_height right)
+								Cons leafValue left right -> 1 + max (get_tree_height left) (get_tree_height right)
 
 --Реализовать функцию tmap, принимающюю дерево и функцию преобразования элемента (a -> b) и возвращающую новое дерево той же формы, но содержащее элементы, полученные применением функции к исходным элементам
 

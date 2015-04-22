@@ -46,4 +46,4 @@ get_tree_sum tree = case tree of
 get_tree_height :: BinaryTreeSearch -> Int
 get_tree_height tree = case tree of 
 							  Nil -> 0
-							  Cons leafValue left right -> max (get_tree_height left) (get_tree_height right)
+							  Cons leafValue left right -> 1 + max (get_tree_height left) (get_tree_height right)
